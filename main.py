@@ -3,11 +3,11 @@ import checkers
 
 # Checks if running as main and calls game
 def check_main():
-    if __name__ != 'main':
+    if __name__ == '__main__':
         game()
 
 
-# Asks user for input and returns variable to be used in game
+# Asks user for input and returns variable to be used in game.
 def get_input():
     while True:
         board_size = int(input('What size would you like the board to be? (4-16): '))

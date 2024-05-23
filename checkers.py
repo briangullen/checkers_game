@@ -1,8 +1,7 @@
-import numpy as np
-from numpy import random
+from numpy import random, ndarray
 
 
-def build_board(given_size: int) -> np.ndarray:
+def build_board(given_size: int) -> ndarray:
     size = given_size
     staring_board = random.choice(['red', 'black', 'empty'], (size, size))
     return staring_board
@@ -18,5 +17,5 @@ def get_count(board_name, color):
     return total_color.sum()
 
 
-if __name__ == 'main.py':
+if __name__ == '__main.py__':
     print('Running checkers.py directly')
