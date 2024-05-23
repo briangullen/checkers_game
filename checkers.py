@@ -20,9 +20,3 @@ def get_count(board_name, color):
 
 if __name__ == 'main.py':
     print('Running checkers.py directly')
-
-
-# starting_board = build_board(3)
-# print(starting_board)
-# red_count = get_count(starting_board, 'black')
-# print(red_count)
